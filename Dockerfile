@@ -6,6 +6,7 @@ WORKDIR /app
 COPY package.json /app/
 RUN npm install
 
+COPY publuc /app/public
 COPY server.js /app/
 
 EXPOSE 1111
